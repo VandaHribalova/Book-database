@@ -1,0 +1,17 @@
+{% extends "template.html" %}
+
+{% block main %}
+<div class="row">
+  <div class="col-md-6 offset-md-3">
+      <div class="signup-form" >
+        <h2 class="text-center">Add Translator</h2>
+        <form method="post" action="{{ url_for('add_translator') }}" class="my-form border p-4">
+          <label for="title">Translator:</label>
+          <input  class="form-control" type="text" name="prekladatel" required><br>
+
+          <label for="title">Number of Books:</label>
+          <input  class="form-control" type="number" name="pocet_knih" min="1"><br>
+
+          <button type="submit" class="btn">Add translator</button>
+        </form>
+{% endblock %}

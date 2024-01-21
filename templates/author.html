@@ -1,0 +1,13 @@
+{% extends "template.html" %}
+
+{% block main %}
+<div class="text-bg">
+    <h2>Autoři:</h2>
+</div>  
+<div class="list-group list-group-mine">
+    {% for author in authors %}
+        <a href={{ url_for('author_detail', author_id=author[0]) }} class="list-group-item list-group-item-action">{{author[1]}} {{author[2]}}</a>
+    {% endfor %}
+</div>
+  
+{% endblock %}

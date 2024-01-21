@@ -1,0 +1,23 @@
+{% extends "template.html" %}
+
+{% block main %}
+<div class="row">
+  <div class="col-md-6 offset-md-3">
+      <div class="signup-form" >
+        <h2>Add author</h2>
+        <form method="post" action="{{ url_for('add_author') }}" class="my-form border p-4">
+          <label for="title">Author's name:</label>
+          <input class="form-control" type="text" name="autor" required><br>
+
+          <label for="title">Birthplace:</label>
+          <input class="form-control" type="text" name="rodne_misto" ><br>
+
+          <label for="title">Number of Books</label>
+          <input class="form-control" type="number" name="pocet_knih" min="1"><br>
+
+          <label for="title">Number of Series:</label>
+          <input class="form-control" type="number" name="pocet_serii" min="0"><br>
+
+          <button type="submit" class="btn">Add author</button>
+        </form>
+{% endblock %}

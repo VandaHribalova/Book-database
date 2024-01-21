@@ -1,0 +1,37 @@
+{% extends "template.html" %}
+
+{% block main %}
+
+  <div class="row">
+      <div class="col-md-6 offset-md-3">
+          <div class="signup-form" >
+            <h2 class="text-center">Add a New Book</h2>
+            <form method="POST" action="{{ url_for('add_book') }}" class="my-form border p-4">
+              <label for="title">Title:</label>
+              <input  class="form-control" type="text" name="nazev" required><br>
+
+              <label for="year">Year:</label>
+              <input  class="form-control" type="number" name="rok_vydani" required min="1440" max="2024"><br>
+
+              <label for="title">Series:</label>
+              <input  class="form-control" type="text" name="serie" required><br>
+
+              <label for="ttle">Publisher's name:</label>
+              <input  class="form-control" type="text" name="nakladatelstvi" required><br>
+
+              <label for="title">Author's name:</label>
+              <input  class="form-control" type="text" name="autor" required><br>
+
+              <label for="title">Translator's name:</label>
+              <input  class="form-control" type="text" name="prekladatel" required><br>
+
+              <label for="genre">Genre:</label>
+              <select class="form-select" name="zanr" required>
+                {% for genre in genres %}
+                  <option value="{{ genre }}">{{ genre }}</option>
+                {% endfor %}
+              </select><br> 
+
+              <button type="submit" class="btn">Add Book</button>
+            </form>
+{% endblock %}

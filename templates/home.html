@@ -1,0 +1,14 @@
+{% extends "template.html" %}
+
+{% block main %}
+    <div class="container-fluid ">
+        <h1 class="home">BOOK-A-BASE</h1>
+        <p class="home">Let's explore book underworld together! We know everything. About everyone...</p>
+    </div>
+
+    <div class="container-fluid p-5">
+        <h2> Explore Our Newly Added Book!</h2>
+        <p class="text-muted">At BOOK-A-BASE we always wating to keep you informed about the latest books and bookworm essentials. That's why we're excited to introduce you to a new literary gem by <span style="color: #fbb557;">{{ info[0][7] }} {{ info[0][8] }}</span>,. If you're a fan of {{ info[0][4] }}, this is a must-read. And here comes what we are all wating for. Its title is... drumroll, please... <strong style="font-size: 1.3em; font-weight: bold;color:#fbb557;">{{ info[0][0] }}!</strong></p>
+    </div>
+    
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "template.html" %}
+
+
+
+{% block main %}
+<div class="container pt-2 mt-3 text-center m-auto  border border-warning">
+    <h2>{{ book_details[0][0] }}</h2>
+</div>
+<div class="container mt-3" style="margin-right: auto;background-color: #030e14;">
+    <table class="my-table">
+        <tr >
+            <th >Název:</th>
+            <td>{{ book_details[0][0] }}</td>
+        </tr>
+        <tr>
+            <th>Autor:</th>
+                            <td><a href={{ url_for('author_detail', author_id=book_details[0][9]) }}>{{ book_details[0][7] }} {{ book_details[0][8] }}</a></td>
+                    </tr>
+        <tr>
+            <th>Rok vydání:</th>
+            <td>{{ book_details[0][1] }}</td>
+        </tr>
+        <tr>
+            <th>Série:</th>
+            <td>{{ book_details[0][2] }}</td>
+        </tr>
+        <tr>
+            <th>Nakladatelstvi:</th>
+                            <td><a href={{ url_for('publisher_detail', publisher_id=book_details[0][10]) }}>{{ book_details[0][3] }}</a></td>
+                    </tr>
+        <tr>
+            <th>Žánr:</th>
+            <td>{{ book_details[0][4] }}</td>
+        </tr>
+        <tr>
+            <th>Překladatel:</th>
+                <td><a href={{ url_for('translator_detail', translator_id=book_details[0][11]) }}>{{ book_details[0][5] }} {{ book_details[0][6] }}</a></td>
+                    </tr>
+    </table>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "template.html" %}
+
+{% block main %}
+    <form action="/search" method="POST">
+        <div class="search input-group ">
+        <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2" name="search">
+        <div class="input-group-append">
+            <button class="btn" type="submit">Send</button>              
+        </div>
+        </div>
+
+
+{% endblock %}

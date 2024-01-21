@@ -1,0 +1,23 @@
+{% extends "template.html" %}
+
+{% block main %}
+<div class="container pt-2 mt-3 text-center m-auto border border-warning">
+    <h2>{{ publisher_details[0][1] }}</h2>
+</div>
+<div class="container mt-3" style="margin-right: auto;background-color: #030e14;">
+    <table class="my-table">
+        <tr>
+            <th>Název:</th>
+            <td>{{ publisher_details[0][1] }}</td>
+        </tr>
+        <tr>
+            <th>Rok založení:</th>
+            <td>{{ publisher_details[0][2] }}</td>
+        </tr>
+        <tr>
+            <th>Jméno majitele:</th>
+            <td>{{ publisher_details[0][3] }} {{ publisher_details[0][4] }}</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}

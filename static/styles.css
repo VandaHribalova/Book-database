@@ -1,0 +1,185 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #030e14;
+  margin: 0;
+  padding: 0;
+  color: #fff; 
+}
+
+main {
+  padding: 20px;
+}
+
+.navbar {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #fbb557; 
+  border: 2px solid#133145 ;
+  position: relative;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #133145; 
+  border-right: 2px solid #133145;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+.navbar-toggler-icon {
+  background-color: #133145; 
+}
+
+.navbar-nav {
+  margin-left: 20px;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 5px;
+}
+
+.navbar-nav .nav-link {
+  color:  #030e14; 
+  font-weight: 600 ;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #030e14; 
+}
+
+.navbar-nav .nav-item.add-book {
+  margin-left: auto; 
+}
+
+.flashes {
+  list-style: none;
+  padding: 0;
+}
+
+
+.flashes li {
+  background-color:  #d9534f;
+  color: #fff;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.container {
+  background-color: #133145;
+  padding: auto;
+  margin-right: 500px; 
+  color: #fdf7f8;
+  border-radius: 5px
+  
+}
+
+.home {
+  text-align: center;
+  color:  #fbb557;
+
+
+}
+
+.container-fluid {
+  background-color: #133145;
+  padding: 0px;
+  margin: 10px auto; 
+  color: #fdf7f8;
+  border-radius: 25px;
+  
+}
+
+.container-fluid h1 {
+  color: #fbb557; 
+  padding-top: 10px;
+}
+
+.container-fluid p {
+  color: #fbb557;
+  padding-bottom: 5px;
+}
+
+
+.container {
+  margin-top: 50px; 
+}
+
+.container p.text-muted {
+  font-size: 1.1em; 
+  color: #6c757d;
+}
+
+.container strong {
+  color: #dc3545;
+}
+
+.list-group-mine .list-group-item{
+  background-color: #133145;
+  border: 1px solid #fbb557;
+  color:#fbb557;
+  font-size: 1.3em;
+}
+
+.list-group-mine .list-group-item .list-group-item-action{
+  background-color:#fbb557;
+
+}
+
+
+.book-h2 {
+  text-align: left;
+  
+}
+
+.search {
+  margin-bottom: 3;
+  margin-top: 3;
+  
+}
+
+.btn {
+  color:#133145;
+  border-color: #133145;
+  background-color: #fbb557;
+
+}
+
+.form-control {
+  background-color: #2e4757;
+  border-color: #fbb557;
+
+}
+
+.form-select{
+  background-color: #2e4757;
+  border-color: #fbb557;
+}
+.list-group .list-group-item {
+  background-color: #133145;
+  border: solid #fbb557;
+  color:#fbb557;
+  font-size: 1.3em;
+}
+
+
+.my-table, tr, td, th {
+  border: 2px #fbb557 solid;
+  border-collapse: collapse;
+  background-color: #133145;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.my-table{
+  width: 90%;
+  margin: auto;
+}
+
+th {
+  height: 50px;
+  width: 50%;  
+  color:#fbb557; 
+}
+
+

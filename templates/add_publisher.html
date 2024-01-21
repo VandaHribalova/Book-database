@@ -1,0 +1,20 @@
+{% extends "template.html" %}
+
+{% block main %}
+<div class="row">
+  <div class="col-md-6 offset-md-3">
+      <div class="signup-form" >
+        <h2 class="text-center">Add Publisher</h2>
+        <form method="post" action="{{ url_for('add_publisher') }}"class="my-form border p-4">
+          <label>Publishing house:</label>
+          <input class="form-control" type="text" name="nakladatelstvi" required><br>
+
+          <label>Year of establishment:</label>
+          <input class="form-control" type="number" name="rok_zalozeni" min="1440" max="2024"><br>
+
+          <label>Owner:</label>
+          <input class="form-control" type="text" name="majitel" ><br>
+
+          <button type="submit" class="btn">Add publisher</button>
+        </form>
+{% endblock %}
